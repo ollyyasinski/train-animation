@@ -1,21 +1,22 @@
-body {
-	margin: 0 ;
+html, body, .wrapper {
+	margin: 0;
 	padding: 0;
 	overflow: hidden;
-}
-
-.wrapper {
+	font-size: 10px;
 	min-height: 100vh;
 	min-width: 100vh;
-	background-image: url('../assets//img/sky1.png');
+	background-image: url('../assets/img/sky.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.bushes {
+.bushes, .rails, .train {
 	position: absolute;
-	bottom: 41px;
-	height: 165px;
+}
+
+.bushes {
+	bottom: 4.1rem;
+	height: 16.5rem;
 	width: 149%;
 	background: url('../assets/img/bushes.png');
 	background-repeat: repeat-x;
@@ -23,31 +24,34 @@ body {
 	background-size: contain;
 	animation: translateX 100s infinite linear both;
 }
+
 .rails {
-	position: absolute;
-	bottom: -207px;
-	height: 315px;
-	width: 1920px;
+	bottom: -20.7rem;
+	height: 31.5rem;
+	width: 270rem;
 	background: url('../assets/img/rails.png');
 	background-repeat: repeat-x;
 	background-position: top center;
 	background-size: contain;
 	animation: translateX 5s infinite linear both;
 }
+
 .train {
-	position: absolute;
-	bottom: -153px;
-	height: 315px;
-	width: 1920px;
-	left: -450px;
-	background: url('../assets/img/train1.png');
+	bottom: -15.3rem;
+	height: 31.5rem;
+	width: 192rem;
+	left: -45rem;
+	background: url('../assets/img/train.png');
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: contain;
 }
 
-
 @keyframes translateX {
-	0% {background-position: 0px 0px;}
-	100% {background-position:  1920px 0px;}
+	0% {
+		background-position: 0px 0px;
+	}
+	100% {
+		background-position: 1920px 0px;
+	}
 }

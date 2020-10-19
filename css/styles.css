@@ -10,9 +10,9 @@ html, body, .wrapper {
 	background-size: cover;
 }
 
-.bushes, .rails, .train {
+/* .bushes, .rails, .train {
 	position: absolute;
-}
+} */
 
 .bushes {
 	bottom: 4.1rem;
